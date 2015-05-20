@@ -5,8 +5,8 @@
 
 [npm-image]: https://img.shields.io/npm/v/friends-swarm.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/friends-swarm
-[travis-image]: https://img.shields.io/travis/flet/friends-swarm.svg?style=flat-square
-[travis-url]: https://travis-ci.org/flet/friends-swarm
+[travis-image]: https://img.shields.io/travis/moose-team/friends-swarm.svg?style=flat-square
+[travis-url]: https://travis-ci.org/moose-team/friends-swarm
 
 :bee: webrtc-swarm with friends
 
