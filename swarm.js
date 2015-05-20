@@ -5,9 +5,22 @@ var signalhub = require('signalhub')
 var hyperlog = require('hyperlog')
 var through = require('through2')
 var protobuf = require('protocol-buffers')
-var fs = require('fs')
+var multiline = require('multiline')
 
-var messages = protobuf(fs.readFileSync(__dirname + '/../schema.proto'))
+var messages = protobuf(multiline(function () {/*
+message SignedMessage {
+  optional bytes signature = 1;
+  required bytes message = 2;
+}
+
+message Message {
+  optional string username = 1;
+  optional string channel = 2;
+  optional uint64 timestamp = 3;
+  optional string text = 4;
+}
+
+*/}))
 
 module.exports = createSwarm
 
