@@ -1,0 +1,36 @@
+{
+  "name": "friends-swarm",
+  "description": ":bee: webrtc-swarm with friends",
+  "version": "1.0.0",
+  "author": "moose-team",
+  "bugs": {
+    "url": "https://github.com/moose-team/friends-swarm/issues"
+  },
+  "devDependencies": {
+    "standard": "*",
+    "tap-spec": "^3.0.0",
+    "tape": "^4.0.0"
+  },
+  "homepage": "https://github.com/moose-team/friends-swarm",
+  "keywords": [
+    "friends"
+  ],
+  "license": "MIT",
+  "main": "swarm.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moose-team/friends-swarm.git"
+  },
+  "scripts": {
+    "test": "standard && tape test/*.js | tap-spec"
+  },
+  "dependencies": {
+    "hyperlog": "^3.7.0",
+    "multiline": "^1.0.2",
+    "protocol-buffers": "^3.1.1",
+    "signalhub": "^4.0.3",
+    "subleveldown": "^2.0.0",
+    "through2": "^0.6.5",
+    "webrtc-swarm": "^1.2.0"
+  }
+}
