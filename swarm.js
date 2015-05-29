@@ -34,6 +34,17 @@ function createSwarm (db, defaultOpts) {
   var sign
   var verify
 
+  if (!defaultOpts) defaultOpts = {}
+
+  if (!defaultOpts.hubs) {
+    defaultOpts.hubs = [
+      'https://signalhub.publicbits.org',
+      'https://signalhub.mafintosh.com',
+      'https://beaugunderson.com/signalhub',
+      'http://dev.mathiasbuus.eu:8080' // deprecated
+    ]
+  }
+
   swarm.changes = function (name) {
     return logs[name] ? logs[name].changes : 0
   }
@@ -77,12 +88,7 @@ function createSwarm (db, defaultOpts) {
 
     var log = logs[name] = hyperlog(subleveldown(db, name))
     var id = 'friends-' + name
-    var hub = signalhub(id, [
-      'https://signalhub.publicbits.org',
-      'https://signalhub.mafintosh.com',
-      'https://beaugunderson.com/signalhub',
-      'http://dev.mathiasbuus.eu:8080' // deprecated
-    ])
+    var hub = signalhub(id, defaultOpts.hubs)
     var sw = webrtcSwarm(hub, defaultOpts)
 
     log.peers = []
