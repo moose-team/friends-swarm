@@ -1,7 +1,7 @@
 {
   "name": "friends-swarm",
   "description": ":bee: webrtc-swarm with friends",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "moose-team",
   "bugs": {
     "url": "https://github.com/moose-team/friends-swarm/issues"
