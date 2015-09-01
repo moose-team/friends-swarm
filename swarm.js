@@ -39,7 +39,7 @@ function createSwarm (db, defaultOpts) {
   if (!defaultOpts.hubs) {
     defaultOpts.hubs = [
       // 'https://signalhub.publicbits.org', // running old version
-      // 'https://signalhub.mafintosh.com', // running old version
+      'https://signalhub.mafintosh.com',
       'https://instant.io:8080'
     ]
   }
