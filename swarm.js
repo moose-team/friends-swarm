@@ -40,8 +40,6 @@ function createSwarm (db, defaultOpts) {
     defaultOpts.hubs = [
       'https://signalhub.publicbits.org',
       'https://signalhub.mafintosh.com',
-      'https://beaugunderson.com/signalhub',
-      'http://dev.mathiasbuus.eu:8080' // deprecated
     ]
   }
 
