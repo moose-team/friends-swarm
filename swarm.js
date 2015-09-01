@@ -40,6 +40,7 @@ function createSwarm (db, defaultOpts) {
     defaultOpts.hubs = [
       'https://signalhub.publicbits.org',
       'https://signalhub.mafintosh.com',
+      'https://instant.io:8080'
     ]
   }
 
