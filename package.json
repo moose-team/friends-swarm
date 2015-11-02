@@ -31,6 +31,6 @@
     "signalhub": "^4.0.3",
     "subleveldown": "^2.0.0",
     "through2": "^2.0.0",
-    "webrtc-swarm": "^1.2.0"
+    "webrtc-swarm": "^2.0.0"
   }
 }
