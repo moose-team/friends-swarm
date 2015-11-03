@@ -39,8 +39,8 @@ function createSwarm (db, defaultOpts) {
 
   if (!defaultOpts.hubs) {
     defaultOpts.hubs = [
-      'https://signalhub.mafintosh.com', // mafintosh
-      'https://instant.io:8080' // feross
+      'https://signalhub.mafintosh.com' // mafintosh
+      // 'https://instant.io:8080' // feross
     ]
   }
 
