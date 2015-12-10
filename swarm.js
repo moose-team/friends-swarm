@@ -8,7 +8,7 @@ var protobuf = require('protocol-buffers')
 var multiline = require('multiline')
 var nets = require('nets')
 
-var messages = protobuf(multiline(function () {/*
+var messages = protobuf(multiline(function () { /*
 message SignedMessage {
   optional bytes signature = 1;
   required bytes message = 2;
@@ -21,7 +21,7 @@ message Message {
   optional string text = 4;
 }
 
-*/}))
+*/ }))
 
 module.exports = createSwarm
 
