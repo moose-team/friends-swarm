@@ -98,7 +98,7 @@ function createSwarm (db, defaultOpts) {
       log.peers = []
 
       sw.on('peer', function (p, id) {
-        var stream = log.replicate({live: true})
+        var stream = log.replicate({ live: true })
 
         log.peers.push(p)
         p.on('close', function () {
@@ -130,7 +130,7 @@ function createSwarm (db, defaultOpts) {
       var log = logs[ch]
       log.heads(function (err, heads) {
         if (err) return cb(err)
-        log.add(heads, messages.SignedMessage.encode({signature: sig, message: m}), cb)
+        log.add(heads, messages.SignedMessage.encode({ signature: sig, message: m }), cb)
       })
     }
 
@@ -184,7 +184,7 @@ function createSwarm (db, defaultOpts) {
 
 // get remote webrtc config (ice/stun/turn)
 function getRemoteConfig (remoteConfigUrl, cb) {
-  nets({url: remoteConfigUrl, json: true}, function gotConfig (err, resp, config) {
+  nets({ url: remoteConfigUrl, json: true }, function gotConfig (err, resp, config) {
     if (err || resp.statusCode > 299) config = undefined // ignore errors
     cb(null, config)
   })
